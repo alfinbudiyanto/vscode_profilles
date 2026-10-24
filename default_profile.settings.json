@@ -138,17 +138,11 @@
 			"path": "/usr/bin/bash",
 			"icon": "terminal-bash",
 		},
-		"tmux": {
-			"path": "/usr/bin/tmux",
-			"icon": "terminal-tmux",
-		},
-		"zsh": {
-			"path": "/usr/bin/zsh",
-			"icon": "terminal-ubuntu",
-		},
 		"fish": {
-			"path": "/usr/bin/fish",
-			"icon": "terminal-git-bash",
+			"path": "/app/bin/host-spawn",
+			"args": ["fish"],
+			"icon": "terminal-bash",
+			"overrideName": true,
 		},
 	},
 	"terminal.integrated.cursorStyle": "underline",
@@ -163,4 +157,6 @@
 	"git.autofetch": true,
 	"html.format.extraLiners": "",
 	"window.newWindowProfile": "Default",
+	"dev.containers.dockerPath": "flatpak-spawn --host docker",
+	"dev.containers.dockerSocketPath": "/run/docker.sock",
 }
