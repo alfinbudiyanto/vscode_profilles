@@ -120,8 +120,10 @@
             "icon": "terminal-ubuntu"
         },
         "fish": {
-            "path": "/usr/bin/fish",
-            "icon": "terminal-git-bash"
+			"path": "/app/bin/host-spawn",
+			"args": ["fish"],
+			"icon": "terminal-bash",
+			"overrideName": true,
         }
     },
     "terminal.integrated.cursorStyle": "underline",
