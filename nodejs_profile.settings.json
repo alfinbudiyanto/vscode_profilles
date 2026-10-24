@@ -137,10 +137,6 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 	},
 
-	/* --- GitLens Defaults --- */
-	"gitlens.ai.model": "vscode",
-	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
-
 	/* ============================== TERMINAL (LINUX) ============================== */
 	"terminal.integrated.profiles.linux": {
 		"bash": {
@@ -164,8 +160,10 @@
 			"icon": "terminal-ubuntu",
 		},
 		"fish": {
-			"path": "/usr/bin/fish",
-			"icon": "terminal-git-bash",
+			"path": "/app/bin/host-spawn",
+			"args": ["fish"],
+			"icon": "terminal-bash",
+			"overrideName": true,
 		},
 	},
 	"terminal.integrated.cursorStyle": "underline",
